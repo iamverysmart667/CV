@@ -1,0 +1,104 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{0.25\baselineskip}}{\temptwo}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Azamat Rsymbetov}
+\address{53 Abay ave, Apt 36 \linebreak Almaty, KZ 050063}
+\contacts{+7 (708) 646-4281 \linebreak seetwopluses@gmail.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Work Experience and Projects}
+		\begin{cvsubsection}{Software Engineer, Intern}{Method Pro}{Summer 2019}
+			\begin{itemize}
+				\item Developed Amazon Alexa skill that checks Onay card balance using Node.js.
+				\item Developed backend based on microservice architecture for online store prototype using Node.js and SQLite.
+				\item Scraped data from Tengrinews and built backend for sentiment analysis project using Puppeteer.js and Node.js.
+			\end{itemize}
+		\end{cvsubsection}
+
+    \begin{cvsubsection}{Scala Developer, Intern}{OneTechnologies}{Summer 2020}
+			\begin{itemize}
+        \item Developed Telegram Bot with NLP using Dialogflow that fetches data from Codeforces API
+			\end{itemize}
+		\end{cvsubsection}
+
+    \begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{MathSnake} (2017). Classical Snake Game with modified rules, where the objective is to score certain amount of points using math. JavaScript, Canvas. 
+				\item \textbf{Keylogger} (2018). CLI utility which runs in the background, records key presses to the logfile and sends it to a given email. Python.
+        \item \textbf{LawyerFinder} (2018). Web app which helps to find and hire lawyers. JavaScript.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Almaty, Kazakhstan}{Suleyman Demirel University}{2018 - 2022}
+			\begin{itemize}
+				\item B.Sc. in Computer Science.
+        \item Coursework: Fundamentals of Programming, Database Management Systems, Advanced Algorithms, Prepartion for ACM, Calculus I, Calculus II, Linear Algebra
+			\end{itemize}
+		\end{cvsubsection}
+
+    \begin{cvsubsection}{Ulsan, South Korea}{Ulsan National Institute of Science and Technology}{Fall 2019}
+			\begin{itemize}
+				\item Exchange Student, Computer Science.
+				\item Coursework: Introduction to Algorithms, Computer Networks, Discrete Mathematics, Basic Circuit Theory, Probability and Introduction to Random Processes
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+  \begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Participation, IITU Robocon 2015} Built robots based on Arduino. Implemented line detection and robot control algorithms using C++.
+				\item \textbf{Participation, IITU Robocon 2016} Built robots based on Arduino. Implemented height detection and object laying mechanism using C++.
+				\item \textbf{1st prize, IV open competition of Almaty on technical projects} Awarded 1st prize for MathSnake project.
+				\item \textbf{3rd prize, Almaty Legal Hackathon} Awarded 3rd prize for LawyerFinder Project.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Techologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+        \item Most Experienced: JavaScript, TypeScript, Node.js
+        \item Some Experience: C++, Java, Python, Oracle SQL, Bash
+        \item Familiar with: C, Scala, Vue
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\end{document}
